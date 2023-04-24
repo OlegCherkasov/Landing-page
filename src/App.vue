@@ -7,7 +7,7 @@
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-import FirstGreeting from "@/components/FirstGreeting.vue";
+import FirstGreeting from "@/components/CardHeader.vue";
 
 export default {
   name: "App",

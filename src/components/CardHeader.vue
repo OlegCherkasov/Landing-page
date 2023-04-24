@@ -20,7 +20,7 @@
 
 <script>
 export default {
-  name: "FirstGreeting",
+  name: "CardHeader",
   data() {
     return {
       company: "Round Rock",
