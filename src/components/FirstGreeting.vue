@@ -59,6 +59,7 @@ p {
 .logo {
   width: 468px;
   margin-top: 100px;
+  margin-left: 100px;
   display: flex;
   justify-content: space-between;
 }
