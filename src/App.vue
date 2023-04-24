@@ -19,6 +19,7 @@ export default {
 </script>
 
 <style>
+
 #app {
   /* max-width: 1903px;
   height: 973px; 

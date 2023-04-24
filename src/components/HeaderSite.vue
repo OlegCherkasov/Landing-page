@@ -1,38 +1,37 @@
 <template>
   <div class="header">
     <LogoCompany />
-    <div class="header__greeting">
-      <h3 class="subtitle">{{ subtitle }}</h3>
-      <h1 class="title">{{ title }}</h1>
+    <div class="greeting">
+      <DoubleTitle />
       <p class="text">{{ text }}</p>
-      <input type="button" value="Help me" />
-      <input type="button" value="Help me" />
+      <ButtonSection :buttonText="arrButtonText[0]" />
     </div>
   </div>
 </template>
 
 <script>
 import LogoCompany from "@/components/LogoCompany.vue";
+import DoubleTitle from "@/components/DoubleTitle.vue";
+import ButtonSection from "@/components/ButtonSection.vue";
 
 export default {
   name: "HeaderSite",
   components: {
     LogoCompany,
+    DoubleTitle,
+    ButtonSection,
   },
   data() {
     return {
-      title: "Lorem",
-      subtitle: "Lorem",
-      text: "Lorem lpsum is symply dummy text of the printing and typesetting industri. Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery.",
-      mainBtnText: "Help me",
-      btnText: "Help me",
+      text: "Lorem lpsum is symply dummy text of the printing and typesetting industri. Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery",
+      arrButtonText: ["Help me", "More information"],
     };
   },
 };
 </script>
 
 <style scoped>
-@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 .header {
   width: 100%;
@@ -47,13 +46,17 @@ export default {
 }
 
 .greeting {
-  max-width: 361px;
-  max-height: 317px;
-  font-family: "SF Pro Display", sans-serif;
+  max-width: 360px;
+  padding-top: 8px;
+  height: 317px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: #4f4f4f;
 }
 
-.subtitle {
-  font-size: 18px;
-  font-weight: 400;
+.text {
+  padding-top: 20px;
 }
 </style>
