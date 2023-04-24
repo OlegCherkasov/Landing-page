@@ -1,18 +1,18 @@
 <template>
   <div id="app">
-    <FirstGreeting />
+    <CardHeader />
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
-import FirstGreeting from "@/components/CardHeader.vue";
+import CardHeader from "@/components/CardHeader.vue";
 
 export default {
   name: "App",
   components: {
-    FirstGreeting,
+    CardHeader,
     // HelloWorld,
   },
 };
