@@ -25,7 +25,7 @@ export default {
 
 .logo {
   width: 468px;
-  margin-top: 100px;
+  margin-top: 80px;
   margin-left: 100px;
   display: flex;
   justify-content: space-between;

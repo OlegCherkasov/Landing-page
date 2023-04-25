@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       text: "Lorem lpsum is symply dummy text of the printing and typesetting industri. Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery",
-      arrButtonText: ["Help me", "More information"],
+      arrButtonText: ["Help Me", "More information"],
     };
   },
 };
@@ -42,7 +42,7 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 115px;
+  gap: 120px;
 }
 
 .greeting {
