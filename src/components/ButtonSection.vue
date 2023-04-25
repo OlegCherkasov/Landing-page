@@ -1,11 +1,7 @@
 <template>
   <div class="buttonSection">
-    <input class="buttonSection--yellow font" type="button" value="Help Me" />
-    <input
-      class="buttonSection--hidden font"
-      type="button"
-      :value="buttonText"
-    />
+    <input class="button font yellow" type="button" value="Help Me" />
+    <input class="button font hidden" type="button" :value="buttonText" />
   </div>
 </template>
 
@@ -22,6 +18,13 @@ export default {
   padding-top: 25px;
 }
 
+.button {
+  width: 160px;
+  height: 50px;
+  border-radius: 40px;
+  border: none;
+}
+
 .font {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -29,18 +32,20 @@ export default {
   line-height: 20px;
 }
 
-.buttonSection--yellow {
-  width: 160px;
-  height: 50px;
-  border-radius: 40px;
-  border: none;
+.yellow {
   background-color: #f2c94c;
   color: #333;
 }
 
-.buttonSection--hidden {
-  padding-left: 30px;
-  border: none;
+.yellow:hover {
+  background-color: #57ebba;
+}
+
+.hidden {
   color: #eb5757;
+}
+
+.hidden:hover {
+  border: 1px solid #333;
 }
 </style>

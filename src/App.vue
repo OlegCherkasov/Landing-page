@@ -1,6 +1,7 @@
 <template>
   <div class="app">
-    <HeaderSite class="headerSite" />
+    <HeaderSite />
+
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
@@ -13,6 +14,7 @@ export default {
   name: "App",
   components: {
     HeaderSite,
+
     // HelloWorld,
   },
 };
@@ -21,9 +23,5 @@ export default {
 <style>
 .app {
   max-width: 1903px;
-}
-
-.headerSite {
-  margin: 0 auto;
 }
 </style>
