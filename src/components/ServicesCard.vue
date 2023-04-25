@@ -20,14 +20,12 @@ img {
 .card {
   width: 322px;
   height: 356px;
-  background-color: #f2f2f2;
 }
 
 .card__description {
   height: 328px;
   background-color: white;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
+  border-radius: 30px;
   display: block;
 }
 
