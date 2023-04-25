@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <HeaderSite />
+    <ServicesSite />
 
     <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
@@ -9,11 +10,13 @@
 <script>
 // import HelloWorld from "./components/HelloWorld.vue";
 import HeaderSite from "@/components/HeaderSite.vue";
+import ServicesSite from "@/components/ServicesSite.vue";
 
 export default {
   name: "App",
   components: {
     HeaderSite,
+    ServicesSite,
 
     // HelloWorld,
   },
