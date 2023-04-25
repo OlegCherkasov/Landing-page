@@ -51,6 +51,11 @@ img {
   left: 71px;
 }
 
+.button:hover {
+  background-color: #57ebba;
+  color: red;
+}
+
 .font {
   font-family: "Poppins", sans-serif;
   font-weight: 700;

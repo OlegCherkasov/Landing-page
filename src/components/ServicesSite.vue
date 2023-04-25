@@ -1,8 +1,10 @@
 <template>
   <div class="services">
-    <DoubleTitle class="service__dblTitle" />
-    <div class="service__cards">
-      <ServicesCard v-for="index in 6" :key="index" />
+    <DoubleTitle class="service__title" />
+    <div class="service__img">
+      <div class="service__cards">
+        <ServicesCard v-for="index in 6" :key="index" />
+      </div>
     </div>
   </div>
 </template>
@@ -24,17 +26,22 @@ export default {
   padding-top: 50px;
 }
 
-.service__dblTitle {
+.service__title {
   margin-left: 350px;
+}
+.service__img {
+  margin-top: 30px;
+  background-color: #f2f2f2;
+  padding: 60px 0 100px;
+  display: flex;
+  justify-content: center;
 }
 
 .service__cards {
-  margin-top: 30px;
-  padding: 60px 0 100px;
+  max-width: 1046px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 30px;
-  background-color: #f2f2f2;
 }
 </style>
