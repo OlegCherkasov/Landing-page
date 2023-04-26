@@ -2,13 +2,10 @@
   <div class="app">
     <HeaderSite />
     <ServicesSite />
-
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App" /> -->
   </div>
 </template>
 
 <script>
-// import HelloWorld from "./components/HelloWorld.vue";
 import HeaderSite from "@/components/HeaderSite.vue";
 import ServicesSite from "@/components/ServicesSite.vue";
 
@@ -17,14 +14,37 @@ export default {
   components: {
     HeaderSite,
     ServicesSite,
-
-    // HelloWorld,
   },
 };
 </script>
 
 <style>
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
+
+* {
+  box-sizing: border-box;
+}
+
+h1,
+h3,
+p,
+img {
+  margin: 0;
+}
+
 .app {
   max-width: 1903px;
+}
+
+.mainFont {
+  font-family: "SF Pro Display", sans-serif;
+}
+
+.basicFont {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 </style>

@@ -2,9 +2,9 @@
   <div class="card">
     <div class="card__description">
       <img src="@/assets/ServiceCards.png" alt="image repair" />
-      <p class="card__description--text">replasing sockets</p>
+      <p class="card__description--text mainFont">replasing sockets</p>
     </div>
-    <input class="button font" type="button" value="I need" />
+    <input class="button basicFont" type="button" value="I need" />
   </div>
 </template>
 
@@ -34,7 +34,6 @@ img {
   font-size: 22px;
   font-weight: 600;
   line-height: 24px;
-  font-family: "SF Pro Display", sans-serif;
   text-transform: uppercase;
   color: #333;
   text-align: center;
@@ -49,18 +48,11 @@ img {
   position: relative;
   top: -28px;
   left: 71px;
+  color: white;
 }
 
 .button:hover {
   background-color: #57ebba;
   color: red;
-}
-
-.font {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
-  color: white;
 }
 </style>

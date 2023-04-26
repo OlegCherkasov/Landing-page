@@ -1,10 +1,10 @@
 <template>
   <div class="header">
-    <LogoCompany />
+    <LogoCompany class="header__logo" />
     <div class="greeting">
-      <DoubleTitle />
-      <p class="text">{{ text }}</p>
-      <ButtonSection :buttonText="arrButtonText[0]" />
+      <DoubleTitle title="LOREM" subtitle="lorem" />
+      <p class="text basicFont">{{ text }}</p>
+      <ButtonSection class="header__btn" buttonText="Help Me" />
     </div>
   </div>
 </template>
@@ -24,18 +24,16 @@ export default {
   data() {
     return {
       text: "Lorem lpsum is symply dummy text of the printing and typesetting industri. Lorem lpsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a gallery",
-      arrButtonText: ["Help Me", "More information"],
     };
   },
 };
 </script>
 
 <style scoped>
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
-
 .header {
   width: 100%;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 973px;
   background: no-repeat url("../assets/BackGroundImg.png");
   background-size: cover;
   background-position: center;
@@ -45,18 +43,23 @@ export default {
   gap: 120px;
 }
 
+.header__logo {
+  margin-top: 80px;
+  margin-left: 100px;
+}
+
 .greeting {
   max-width: 360px;
-  padding-top: 8px;
   height: 317px;
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px;
-  color: #4f4f4f;
 }
 
 .text {
   padding-top: 20px;
+  font-weight: 500;
+  color: #4f4f4f;
+}
+
+.header__btn {
+  padding-top: 25px;
 }
 </style>

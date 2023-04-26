@@ -1,9 +1,17 @@
 <template>
   <div class="services">
-    <DoubleTitle class="service__title" />
+    <DoubleTitle
+      class="service__title"
+      title="Electric Services"
+      subtitle="only the best"
+    />
     <div class="service__img">
       <div class="service__cards">
-        <ServicesCard v-for="index in 6" :key="index" />
+        <ServicesCard
+          v-for="(card, index) in cards"
+          :key="index"
+          :item="card"
+        />
       </div>
     </div>
   </div>
@@ -18,16 +26,30 @@ export default {
     DoubleTitle,
     ServicesCard,
   },
+
+  data() {
+    return {
+      cards: [
+        {
+          cardsText: "replacing sockets",
+          cardsButtonText: "apply",
+          cardsImage: "",
+        },
+      ],
+    };
+  },
 };
 </script>
 
-<style>
+<style scoped>
 .services {
   padding-top: 50px;
 }
 
 .service__title {
-  margin-left: 350px;
+  max-width: 791px;
+  height: 134px;
+  margin-left: 300px;
 }
 .service__img {
   margin-top: 30px;

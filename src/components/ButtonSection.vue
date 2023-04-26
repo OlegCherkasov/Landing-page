@@ -1,11 +1,11 @@
 <template>
-  <div class="buttonSection">
-    <input class="button font yellow" type="button" value="Help Me" />
-    <input class="button font hidden" type="button" :value="buttonText" />
+  <div>
+    <input class="button basicFont yellow" type="button" value="Help Me" />
+    <input class="button basicFont hidden" type="button" :value="buttonText" />
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   name: "ButtonSection",
 
@@ -14,22 +14,11 @@ export default {
 </script>
 
 <style scoped>
-.buttonSection {
-  padding-top: 25px;
-}
-
 .button {
   width: 160px;
   height: 50px;
   border-radius: 40px;
   border: none;
-}
-
-.font {
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 20px;
 }
 
 .yellow {
