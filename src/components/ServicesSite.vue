@@ -10,7 +10,8 @@
         <ServicesCard
           v-for="(card, index) in cards"
           :key="index"
-          :item="card"
+          :cardsText="card.cardsText"
+          :cardsButtonText="card.cardsButtonText"
         />
       </div>
     </div>
@@ -22,6 +23,7 @@ import DoubleTitle from "@/components/DoubleTitle.vue";
 import ServicesCard from "@/components/ServicesCard.vue";
 
 export default {
+  name: "ServiceSite",
   components: {
     DoubleTitle,
     ServicesCard,
@@ -32,7 +34,32 @@ export default {
       cards: [
         {
           cardsText: "replacing sockets",
-          cardsButtonText: "apply",
+          cardsButtonText: "I need",
+          cardsImage: "",
+        },
+        {
+          cardsText: "stretching the ceiling",
+          cardsButtonText: "You need",
+          cardsImage: "",
+        },
+        {
+          cardsText: "laminate flooring",
+          cardsButtonText: "We need",
+          cardsImage: "",
+        },
+        {
+          cardsText: "wallpapering walls",
+          cardsButtonText: "He need",
+          cardsImage: "",
+        },
+        {
+          cardsText: "door installation",
+          cardsButtonText: "She need",
+          cardsImage: "",
+        },
+        {
+          cardsText: "furniture assembly",
+          cardsButtonText: "They need",
           cardsImage: "",
         },
       ],
@@ -49,7 +76,7 @@ export default {
 .service__title {
   max-width: 791px;
   height: 134px;
-  margin-left: 300px;
+  margin-left: 15%;
 }
 .service__img {
   margin-top: 30px;

@@ -2,14 +2,18 @@
   <div class="card">
     <div class="card__description">
       <img src="@/assets/ServiceCards.png" alt="image repair" />
-      <p class="card__description--text mainFont">replasing sockets</p>
+      <p class="card__description--text mainFont">{{ cardsText }}</p>
     </div>
-    <input class="button basicFont" type="button" value="I need" />
+    <input class="button basicFont" type="button" :value="cardsButtonText" />
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  name: "ServiceCard",
+
+  props: ["cardsText", "cardsButtonText", "cardsImage"],
+};
 </script>
 
 <style scoped>
@@ -26,14 +30,10 @@ img {
   height: 328px;
   background-color: white;
   border-radius: 30px;
-  display: block;
 }
 
 .card__description--text {
   padding-top: 25px;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 24px;
   text-transform: uppercase;
   color: #333;
   text-align: center;
