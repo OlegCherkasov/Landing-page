@@ -34,7 +34,8 @@ img {
 }
 
 .app {
-  max-width: 1903px;
+  max-width: 1803px;
+  margin: 0 auto;
 }
 
 .mainFont {
