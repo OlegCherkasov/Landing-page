@@ -5,7 +5,7 @@
       title="Electric Services"
       subtitle="only the best"
     />
-    <div class="service__img">
+    <div class="service__images">
       <div class="service__cards">
         <ServicesCard
           v-for="(card, index) in cards"
@@ -79,7 +79,7 @@ export default {
   height: 134px;
   margin-left: 15%;
 }
-.service__img {
+.service__images {
   margin-top: 30px;
   background-color: #f2f2f2;
   padding: 60px 0 100px;
