@@ -1,8 +1,15 @@
 <template>
   <div class="card">
     <div class="card__description">
-      <img src="@/assets/ServiceCards.png" alt="image repair" />
-      <p class="card__description--text mainFont">{{ cardsText }}</p>
+      <img
+        :src="require(`@/assets/${cardsImage}.png`)"
+        :alt="cardsText"
+        height="228"
+      />
+
+      <p class="card__text mainFont">
+        {{ cardsText }}
+      </p>
     </div>
     <input class="button basicFont" type="button" :value="cardsButtonText" />
   </div>
@@ -32,7 +39,7 @@ img {
   border-radius: 30px;
 }
 
-.card__description--text {
+.card__text {
   padding-top: 25px;
   text-transform: uppercase;
   color: #333;

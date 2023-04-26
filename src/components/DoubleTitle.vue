@@ -1,15 +1,16 @@
 <template>
   <div>
     <p class="subtitle mainFont">{{ subtitle }}</p>
-    <h1 class="title basicFont">{{ title }}</h1>
+    <h1 class="title basicFont" :class="{ title__header: isHeader }">
+      {{ title }}
+    </h1>
   </div>
 </template>
-
 <script>
 export default {
   name: "DoubleTitle",
 
-  props: ["title", "subtitle"],
+  props: ["title", "subtitle", "isHeader"],
   // data() {
   //   return {
   //     subtitle: "lorem",
@@ -28,10 +29,13 @@ export default {
 }
 
 .title {
-  /* font-size: 104px; */
-  font-size: 90px;
+  font-size: 85px;
   font-weight: 900;
   line-height: 96px;
   color: #eb5757;
+}
+
+.title__header {
+  font-size: 104px;
 }
 </style>>

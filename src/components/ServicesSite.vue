@@ -12,6 +12,7 @@
           :key="index"
           :cardsText="card.cardsText"
           :cardsButtonText="card.cardsButtonText"
+          :cardsImage="card.cardsImage"
         />
       </div>
     </div>
@@ -35,32 +36,32 @@ export default {
         {
           cardsText: "replacing sockets",
           cardsButtonText: "I need",
-          cardsImage: "",
+          cardsImage: "ServiceCards",
         },
         {
           cardsText: "stretching the ceiling",
           cardsButtonText: "You need",
-          cardsImage: "",
+          cardsImage: "ServiceCards",
         },
         {
           cardsText: "laminate flooring",
           cardsButtonText: "We need",
-          cardsImage: "",
+          cardsImage: "ServiceCards",
         },
         {
           cardsText: "wallpapering walls",
           cardsButtonText: "He need",
-          cardsImage: "",
+          cardsImage: "ServiceCards",
         },
         {
           cardsText: "door installation",
           cardsButtonText: "She need",
-          cardsImage: "",
+          cardsImage: "ServiceCards",
         },
         {
           cardsText: "furniture assembly",
           cardsButtonText: "They need",
-          cardsImage: "",
+          cardsImage: "ServiceCards",
         },
       ],
     };
