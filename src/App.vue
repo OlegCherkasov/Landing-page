@@ -14,6 +14,12 @@ import AboutAs from "./components/AboutAs.vue";
 export default {
   name: "App",
 
+  components: {
+    HeaderSite,
+    ServicesSite,
+    AboutAs,
+  },
+
   metaInfo() {
     return {
       title: "FIRST SITE ON VUE",
@@ -31,12 +37,6 @@ export default {
         { name: "robots", content: "index,follow" },
       ],
     };
-  },
-
-  components: {
-    HeaderSite,
-    ServicesSite,
-    AboutAs,
   },
 };
 </script>

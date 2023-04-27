@@ -47,4 +47,4 @@ export default {
 .title__header {
   font-size: 104px;
 }
-</style>>
+</style>

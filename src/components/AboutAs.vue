@@ -53,7 +53,7 @@ export default {
 };
 </script>
 
-<style scopped>
+<style scoped>
 .aboutAs {
   padding-top: 50px;
   height: 727px;
@@ -72,7 +72,7 @@ export default {
   gap: 40px;
 }
 
-.aboutAs__button {
+/* .aboutAs__button {
   align-items: ;
-}
+} */
 </style>
