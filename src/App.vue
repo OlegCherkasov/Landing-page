@@ -2,12 +2,14 @@
   <div class="app">
     <HeaderSite />
     <ServicesSite />
+    <AboutAs />
   </div>
 </template>
 
 <script>
 import HeaderSite from "@/components/HeaderSite.vue";
 import ServicesSite from "@/components/ServicesSite.vue";
+import AboutAs from "./components/AboutAs.vue";
 
 export default {
   name: "App",
@@ -30,10 +32,11 @@ export default {
       ],
     };
   },
-  
+
   components: {
     HeaderSite,
     ServicesSite,
+    AboutAs,
   },
 };
 </script>

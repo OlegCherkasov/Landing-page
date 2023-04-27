@@ -1,6 +1,7 @@
 <template>
-  <div>
-    <p class="subtitle mainFont">{{ subtitle }}</p>
+  <div class="doubleTitle" :class="{ doubleTitle__header: !isHeader }">
+    <p class="subtitle mainFont">{{ isHeader ? subtitleHeader : subtitle }}</p>
+    <!-- <p class="subtitle mainFont">{{ isHeader ? "lorem" : "only the best" }}</p> -->
     <h1 class="title basicFont" :class="{ title__header: isHeader }">
       {{ title }}
     </h1>
@@ -10,17 +11,25 @@
 export default {
   name: "DoubleTitle",
 
-  props: ["title", "subtitle", "isHeader"],
-  // data() {
-  //   return {
-  //     subtitle: "lorem",
-  //     title: "Lorem",
-  //   };
-  // },
+  props: ["title", "isHeader"],
+  data() {
+    return {
+      subtitleHeader: "lorem",
+      subtitle: "only the best",
+    };
+  },
 };
 </script>
 
 <style scoped>
+.doubleTitle {
+  height: 134px;
+}
+
+.doubleTitle__header {
+  margin-left: 15%;
+}
+
 .subtitle {
   font-size: 30px;
   font-weight: 300;

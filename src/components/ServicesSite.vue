@@ -1,10 +1,6 @@
 <template>
   <div class="services">
-    <DoubleTitle
-      class="service__title"
-      title="Electric Services"
-      subtitle="only the best"
-    />
+    <DoubleTitle title="Electric Services" />
     <div class="service__images">
       <div class="service__cards">
         <ServicesCard
@@ -74,11 +70,6 @@ export default {
   padding-top: 50px;
 }
 
-.service__title {
-  max-width: 791px;
-  height: 134px;
-  margin-left: 15%;
-}
 .service__images {
   margin-top: 30px;
   background-color: #f2f2f2;

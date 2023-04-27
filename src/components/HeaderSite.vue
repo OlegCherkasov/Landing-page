@@ -2,7 +2,7 @@
   <div class="header">
     <LogoCompany class="header__logo" />
     <div class="greeting">
-      <DoubleTitle title="LOREM" subtitle="lorem" isHeader="true"/>
+      <DoubleTitle title="LOREM" isHeader="true"/>
       <p class="text basicFont">{{ text }}</p>
       <ButtonSection class="header__btn" buttonText="Help Me" />
     </div>
