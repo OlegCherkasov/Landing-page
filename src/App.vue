@@ -11,6 +11,26 @@ import ServicesSite from "@/components/ServicesSite.vue";
 
 export default {
   name: "App",
+
+  metaInfo() {
+    return {
+      title: "FIRST SITE ON VUE",
+      meta: [
+        {
+          name: "description",
+          content: "website on Vue",
+        },
+        {
+          property: "og:title",
+          content: "My Vue",
+        },
+        { property: "og:site_name", content: "First Vue" },
+        { property: "og:type", content: "website" },
+        { name: "robots", content: "index,follow" },
+      ],
+    };
+  },
+  
   components: {
     HeaderSite,
     ServicesSite,
