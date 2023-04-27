@@ -1,6 +1,6 @@
 <template>
   <div class="logo">
-    <img src="../assets/LogoImg.svg" alt="logo Round Rock" width="96" />
+    <img src="@/assets/LogoImg.svg" alt="logo Round Rock" width="96" />
     <div class="mainFont">
       <p class="logo--company">{{ company }}</p>
       <p class="logo--prof">{{ profession }}</p>

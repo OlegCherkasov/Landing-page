@@ -72,19 +72,18 @@ export default {
 
 .service__images {
   margin-top: 30px;
+  padding: 70px 0 100px;
   border-top-left-radius: 50% 12vh;
   border-top-right-radius: 50% 12vh;
   background-color: #f2f2f2;
-  padding: 60px 0 100px;
-  display: flex;
-  justify-content: center;
 }
 
 .service__cards {
+  margin: 0 auto;
   max-width: 1070px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 40px;
+  gap: 35px;
 }
 </style>
