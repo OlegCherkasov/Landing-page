@@ -1,5 +1,5 @@
 <template>
-  <div class="doubleTitle" :class="{ doubleTitle__header: !isHeader }">
+  <div class="doubleTitle" :class="{ noHeader: !isHeader }">
     <p class="subtitle mainFont">{{ isHeader ? subtitleHeader : subtitle }}</p>
     <!-- <p class="subtitle mainFont">{{ isHeader ? "lorem" : "only the best" }}</p> -->
     <h1 class="title basicFont" :class="{ title__header: isHeader }">
@@ -26,8 +26,8 @@ export default {
   height: 134px;
 }
 
-.doubleTitle__header {
-  margin-left: 10%;
+.noHeader {
+  margin-left: 12vw;
 }
 
 .subtitle {

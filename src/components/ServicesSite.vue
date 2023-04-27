@@ -81,10 +81,10 @@ export default {
 }
 
 .service__cards {
-  max-width: 1060px;
+  max-width: 1070px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  gap: 40px;
 }
 </style>

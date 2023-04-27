@@ -9,6 +9,7 @@
         :aboutMarker="index + 1"
         :aboutCardText="item.text"
       />
+      <ButtonSection class="aboutAs__button" buttonText="More information" />
     </div>
   </div>
 </template>
@@ -16,13 +17,14 @@
 <script>
 import DoubleTitle from "@/components/DoubleTitle.vue";
 import AboutAsCard from "@/components/AboutAsCard.vue";
+import ButtonSection from "@/components/ButtonSection.vue";
 
 export default {
   name: "AboutAs",
 
   props: [],
 
-  components: { DoubleTitle, AboutAsCard },
+  components: { DoubleTitle, AboutAsCard, ButtonSection },
 
   data() {
     return {
@@ -63,10 +65,14 @@ export default {
 .aboutAs__todos {
   margin: 0 auto;
   margin-top: 50px;
-  max-width: 1090px;
+  max-width: 1070px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 40px;
+}
+
+.aboutAs__button {
+  align-items: ;
 }
 </style>
