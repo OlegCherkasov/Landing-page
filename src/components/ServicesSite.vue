@@ -72,6 +72,8 @@ export default {
 
 .service__images {
   margin-top: 30px;
+  border-top-left-radius: 50% 12vh;
+  border-top-right-radius: 50% 12vh;
   background-color: #f2f2f2;
   padding: 60px 0 100px;
   display: flex;

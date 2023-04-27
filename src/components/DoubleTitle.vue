@@ -27,7 +27,7 @@ export default {
 }
 
 .doubleTitle__header {
-  margin-left: 15%;
+  margin-left: 10%;
 }
 
 .subtitle {
