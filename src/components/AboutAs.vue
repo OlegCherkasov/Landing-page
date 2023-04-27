@@ -68,11 +68,7 @@ export default {
   max-width: 1070px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 40px;
 }
-
-/* .aboutAs__button {
-  align-items: ;
-} */
 </style>

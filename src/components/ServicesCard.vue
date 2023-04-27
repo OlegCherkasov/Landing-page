@@ -31,6 +31,7 @@ img {
 .card {
   width: 322px;
   height: 356px;
+  position: relative;
 }
 
 .card__description {
@@ -52,8 +53,8 @@ img {
   border-radius: 20px;
   border: none;
   background-color: #eb7598;
-  position: relative;
-  top: -28px;
+  position: absolute;
+  bottom: 0;
   left: 71px;
   color: white;
 }
