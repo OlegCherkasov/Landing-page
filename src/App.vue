@@ -69,15 +69,9 @@ img {
 
 .mainFont {
   font-family: "SF Pro Display", sans-serif;
-  font-size: 22px;
-  font-weight: 600;
-  line-height: 24px;
 }
 
 .basicFont {
   font-family: "Poppins", sans-serif;
-  /* font-size: 14px;
-  font-weight: 700;
-  line-height: 20px; */
 }
 </style>
