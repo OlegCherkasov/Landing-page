@@ -66,7 +66,7 @@ export default {
   border: none;
   display: block;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
   color: #e15252;
 }
 
@@ -91,7 +91,12 @@ input::placeholder {
   opacity: 60%;
 }
 
-input:focus-visible {
+.contact__input:focus-visible {
+  outline: 2px solid white;
+  outline-offset: 3px;
+}
+
+.subm:hover {
   outline: 2px solid white;
   outline-offset: 3px;
 }
