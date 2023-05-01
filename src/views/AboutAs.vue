@@ -56,7 +56,7 @@ export default {
 <style scoped>
 .aboutAs {
   padding-top: 50px;
-  height: 727px;
+  padding-bottom: 100px;
   border-bottom-left-radius: 50% 12vh;
   border-bottom-right-radius: 50% 12vh;
   background-color: #f2f2f2;

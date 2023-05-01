@@ -34,7 +34,7 @@ export default {
 
 .gallery__img {
   margin: 0 auto;
-  max-width: 1192px;
+  max-width: 1200px;
   margin-top: 50px;
   display: flex;
   flex-wrap: wrap;
