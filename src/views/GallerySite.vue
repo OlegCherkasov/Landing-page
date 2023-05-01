@@ -3,7 +3,7 @@
     <DoubleTitle title="Gallery" />
     <div class="gallery__img">
       <img
-        v-for="index in amountImag"
+        v-for="index in amountImages"
         :key="index"
         :index="index + 1"
         :src="require(`@/assets/gallery/gallery${index}.png`)"
@@ -21,7 +21,7 @@ export default {
   components: { DoubleTitle },
   data() {
     return {
-      amountImag: 8,
+      amountImages: 8,
     };
   },
 };
