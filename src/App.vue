@@ -2,7 +2,7 @@
   <div class="app">
     <HeaderSite />
     <ServicesSite />
-    <AboutAs />
+    <AboutAsSite />
     <GallerySite />
   </div>
 </template>
@@ -10,8 +10,8 @@
 <script>
 import HeaderSite from "@/views/HeaderSite.vue";
 import ServicesSite from "@/views/ServicesSite.vue";
-import AboutAs from "@/views/AboutAs.vue";
-import GallerySite from '@/views/GallerySite.vue';
+import AboutAsSite from "@/views/AboutAsSite.vue";
+import GallerySite from "@/views/GallerySite.vue";
 
 export default {
   name: "App",
@@ -19,8 +19,8 @@ export default {
   components: {
     HeaderSite,
     ServicesSite,
-    AboutAs,
-    GallerySite
+    AboutAsSite,
+    GallerySite,
   },
 
   metaInfo() {

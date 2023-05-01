@@ -20,7 +20,7 @@ import AboutAsCard from "@/components/AboutAsCard.vue";
 import ButtonSection from "@/components/ButtonSection.vue";
 
 export default {
-  name: "AboutAs",
+  name: "AboutAsSite",
 
   props: [],
 
