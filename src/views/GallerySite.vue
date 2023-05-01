@@ -5,7 +5,6 @@
       <img
         v-for="index in amountImages"
         :key="index"
-        :index="index + 1"
         :src="require(`@/assets/gallery/gallery${index}.png`)"
         alt="foto repair"
         height="282"
