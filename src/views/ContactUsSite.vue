@@ -65,26 +65,34 @@ export default {
   border-radius: 28px;
   border: none;
   display: block;
-  font-size: 20px;
-  font-weight: lighter;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e15252;
 }
+
 .data {
   padding-left: 70px;
 }
+
 .subm {
   width: 168px;
   border: 3px solid white;
   background-color: #e15252;
+  font-size: 20px;
+  font-weight: lighter;
   color: white;
   letter-spacing: 2px;
 }
 
 input::placeholder {
   color: #e15252;
+  font-weight: lighter;
+  font-size: 20px;
   opacity: 60%;
 }
 
 input:focus-visible {
-  outline-color: yellow;
+  outline: 2px solid white;
+  outline-offset: 3px;
 }
 </style>
