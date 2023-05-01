@@ -1,6 +1,12 @@
 <template>
+  <!-- <div :class="{isFooter ? logo__footer : logo}" > -->
   <div class="logo">
-    <img src="@/assets/LogoImg.svg" alt="logo Round Rock" width="96" />
+    <img
+      src="@/assets/LogoImg.svg"
+      alt="logo Round Rock"
+      width="96"
+      height="102"
+    />
     <div class="mainFont">
       <p class="logo--company">{{ company }}</p>
       <p class="logo--prof">{{ profession }}</p>
@@ -11,6 +17,9 @@
 <script>
 export default {
   name: "LogoCompany",
+
+  props: ["isFooter"],
+
   data() {
     return {
       company: "Round Rock",

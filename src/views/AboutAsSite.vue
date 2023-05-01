@@ -9,7 +9,7 @@
         :aboutMarker="index + 1"
         :aboutCardText="item.text"
       />
-      <ButtonSection class="aboutAs__button" buttonText="More information" />
+      <ButtonSection buttonText="More information" />
     </div>
   </div>
 </template>
@@ -64,9 +64,11 @@ export default {
   margin: 0 auto;
   margin-top: 50px;
   max-width: 1070px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px;
+  /* justify-content: space-between; */
+  justify-content: space-evenly;
+  gap: 20px;
 }
 </style>

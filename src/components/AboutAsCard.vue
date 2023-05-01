@@ -21,6 +21,7 @@ export default {
 .aboutAsCard__marker {
   width: 24px;
   height: 24px;
+  margin-left: 10px;
   border-radius: 50%;
   border: 2px solid #d89595;
   color: #d89595;
@@ -28,7 +29,7 @@ export default {
 }
 
 .text {
-  padding-top: 10px;
+  padding: 10px;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;

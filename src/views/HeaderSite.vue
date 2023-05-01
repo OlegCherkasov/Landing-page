@@ -32,8 +32,7 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  /* height: 100vh; */
-  height: 973px;
+  height: 100vh;
   background: no-repeat url("../assets/BackGroundImg.png");
   background-size: cover;
   background-position: center;
