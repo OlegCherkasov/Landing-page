@@ -4,6 +4,7 @@
     <ServicesSite />
     <AboutAsSite />
     <GallerySite />
+    <ContactUsSite />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderSite from "@/views/HeaderSite.vue";
 import ServicesSite from "@/views/ServicesSite.vue";
 import AboutAsSite from "@/views/AboutAsSite.vue";
 import GallerySite from "@/views/GallerySite.vue";
+import ContactUsSite from "@/views/ContactUsSite.vue";
 
 export default {
   name: "App",
@@ -21,6 +23,7 @@ export default {
     ServicesSite,
     AboutAsSite,
     GallerySite,
+    ContactUsSite,
   },
 
   metaInfo() {
