@@ -2,7 +2,7 @@
   <div class="header">
     <LogoCompany class="header__logo" />
     <div class="greeting">
-      <DoubleTitle title="LOREM" isHeader="true"/>
+      <DoubleTitle title="LOREM" isHeader="true" />
       <p class="text basicFont">{{ text }}</p>
       <ButtonSection class="header__btn" buttonText="Help Me" />
     </div>
@@ -57,6 +57,8 @@ export default {
   padding-top: 20px;
   font-weight: 500;
   color: #4f4f4f;
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .header__btn {

@@ -57,6 +57,9 @@ img {
   bottom: 0;
   left: 71px;
   color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .button:hover {

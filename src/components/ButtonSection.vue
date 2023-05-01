@@ -21,6 +21,9 @@ export default {
   height: 50px;
   border-radius: 40px;
   border: none;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
 }
 
 .yellow {

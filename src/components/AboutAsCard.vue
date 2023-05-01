@@ -30,6 +30,9 @@ export default {
 .text {
   padding-top: 10px;
   font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+
   color: #4f4f4f;
 }
 </style>

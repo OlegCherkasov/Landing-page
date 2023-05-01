@@ -76,8 +76,8 @@ img {
 
 .basicFont {
   font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  /* font-size: 14px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 20px; */
 }
 </style>
