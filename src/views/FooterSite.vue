@@ -1,15 +1,15 @@
 <template>
   <div class="footer">
-    <LogoCompany />
+    <!-- <LogoCompany /> -->
   </div>
 </template>
 
 <script>
-import LogoCompany from "@/components/LogoCompany.vue";
+// import LogoCompany from "@/components/LogoCompany.vue";
 export default {
   name: "FooterSite",
   components: {
-    LogoCompany,
+    // LogoCompany,
   },
 };
 </script>

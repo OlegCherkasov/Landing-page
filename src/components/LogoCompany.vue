@@ -31,10 +31,7 @@ export default {
 
 <style scoped>
 .logo {
-  width: 468px;
   color: #4f4f4f;
-  display: flex;
-  justify-content: space-between;
 }
 
 .logo--company {
@@ -49,5 +46,13 @@ export default {
   font-weight: 300;
   line-height: 30px;
   letter-spacing: 9px;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    max-width: 468px;
+    display: flex;
+    gap: 20px;
+  }
 }
 </style>

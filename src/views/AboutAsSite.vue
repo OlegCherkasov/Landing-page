@@ -9,7 +9,7 @@
         :aboutMarker="index + 1"
         :aboutCardText="item.text"
       />
-      <ButtonSection buttonText="More information" />
+      <ButtonSection class="aboutAs__button" buttonText="More information" />
     </div>
   </div>
 </template>
@@ -69,5 +69,15 @@ export default {
   flex-wrap: wrap;
   justify-content: space-evenly;
   gap: 20px;
+}
+
+.aboutAs__button {
+  padding-left: 25px;
+}
+
+@media (min-width: 768px) {
+  .aboutAs__button {
+    width: 100%;
+  }
 }
 </style>

@@ -74,8 +74,8 @@ export default {
 .setting {
   margin-top: 100px;
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  justify-content: space-evenly;
+  gap: 20px;
 }
 
 .contact__form {

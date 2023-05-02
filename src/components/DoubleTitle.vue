@@ -1,7 +1,6 @@
 <template>
-  <div class="doubleTitle" :class="{ noHeader: !isHeader }">
+  <div :class="{ noHeader: !isHeader }">
     <p class="subtitle mainFont">{{ isHeader ? subtitleHeader : subtitle }}</p>
-    <!-- <p class="subtitle mainFont">{{ isHeader ? "lorem" : "only the best" }}</p> -->
     <h1 class="title basicFont" :class="{ title__header: isHeader }">
       {{ title }}
     </h1>
@@ -22,12 +21,8 @@ export default {
 </script>
 
 <style scoped>
-.doubleTitle {
-  height: 134px;
-}
-
 .noHeader {
-  margin-left: 12vw;
+  text-align: center;
 }
 
 .subtitle {
@@ -38,13 +33,31 @@ export default {
 }
 
 .title {
-  font-size: 85px;
+  font-size: 42px;
   font-weight: 900;
-  line-height: 96px;
+  line-height: 50px;
   color: #eb5757;
 }
 
 .title__header {
-  font-size: 104px;
+  font-size: 80px;
+  line-height: 56px;
+}
+
+@media (min-width: 500px) {
+  .title {
+    font-size: 85px;
+    font-weight: 900;
+    line-height: 96px;
+  }
+
+  .title__header {
+    font-size: 104px;
+  }
+
+  .noHeader {
+    margin-left: 12vw;
+    text-align: start;
+  }
 }
 </style>
