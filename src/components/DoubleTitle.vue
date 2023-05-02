@@ -44,7 +44,7 @@ export default {
   line-height: 56px;
 }
 
-@media (min-width: 500px) {
+@media only screen and (min-width: 500px) {
   .title {
     font-size: 85px;
     font-weight: 900;

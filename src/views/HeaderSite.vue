@@ -63,7 +63,7 @@ export default {
   padding-top: 25px;
 }
 
-@media (min-width: 440px) {
+@media only screen and (min-width: 440px) {
   .header {
     height: 100vh;
   }

@@ -152,7 +152,7 @@ input::placeholder {
   margin-left: 5px;
 }
 
-@media (min-width: 560px) {
+@media only screen and (min-width: 560px) {
   .setting {
     display: flex;
     flex-direction: row;

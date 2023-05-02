@@ -75,7 +75,7 @@ export default {
   padding-left: 25px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .aboutAs__button {
     width: 100%;
   }

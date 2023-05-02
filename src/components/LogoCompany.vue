@@ -48,7 +48,7 @@ export default {
   letter-spacing: 9px;
 }
 
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .logo {
     max-width: 468px;
     display: flex;
