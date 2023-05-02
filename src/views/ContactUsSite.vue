@@ -56,14 +56,13 @@ export default {
 .contact {
   margin: 60px auto;
   max-width: 1200px;
-  padding: 50px 100px 100px;
-  height: 648px;
-  /* ВЫСОТА */
+  padding-bottom: 100px;
   background-color: #e15252;
   border-radius: 0 0 50px 50px;
 }
 
 .contact__title {
+  padding-top: 100px;
   font-size: 96px;
   font-weight: lighter;
   color: white;
@@ -74,7 +73,8 @@ export default {
 .setting {
   margin-top: 100px;
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
 }
 
@@ -89,6 +89,7 @@ export default {
 .contact__details {
   margin-top: 30px;
   max-width: 314px;
+  margin-right: 5vw;
   height: 132px;
   display: flex;
   flex-direction: column;
@@ -149,5 +150,18 @@ input::placeholder {
 
 .geo {
   margin-left: 5px;
+}
+
+@media (min-width: 560px) {
+  .setting {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .contact__form {
+    margin-left: 5vw;
+  }
 }
 </style>

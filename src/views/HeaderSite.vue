@@ -32,7 +32,6 @@ export default {
 <style scoped>
 .header {
   width: 100%;
-  height: 100vh;
   background: no-repeat url("../assets/BackGroundImg.png");
   background-size: cover;
   background-position: center;
@@ -49,7 +48,7 @@ export default {
 
 .greeting {
   max-width: 360px;
-  height: 317px;
+  min-height: 317px;
 }
 
 .text {
@@ -62,5 +61,11 @@ export default {
 
 .header__btn {
   padding-top: 25px;
+}
+
+@media (min-width: 440px) {
+  .header {
+    height: 100vh;
+  }
 }
 </style>
