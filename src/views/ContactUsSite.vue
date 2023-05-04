@@ -3,25 +3,9 @@
     <h1 class="contact__title basicFont">Contact Us</h1>
     <div class="setting">
       <div class="contact__form">
-        <input
-          v-model="name"
-          class="contact__input data basicFont"
-          type="text"
-          placeholder="You Name"
-        />
-        <input
-          v-model="surname"
-          class="contact__input data basicFont"
-          type="text"
-          placeholder="You Surname"
-        />
-        <input
-          v-model.number="phone"
-          class="contact__input data basicFont"
-          type="tel"
-          placeholder="+380..."
-          required
-        />
+        <ContactInputName @getName="getName" />
+        <ContactInputSurname @getSurname="getSurname" />
+        <ContactInputPhone @getPhone="getPhone" />
         <ContactButton @clickButton="sendData" />
       </div>
       <div class="contact__details">
@@ -44,10 +28,17 @@
 
 <script>
 import ContactButton from "@/components/ContactButton.vue";
+import ContactInputPhone from "@/components/ContactInputPhone.vue";
+import ContactInputSurname from "@/components/ContactInputSurname.vue";
+import ContactInputName from "@/components/ContactInputName.vue";
+
 export default {
   name: "ContactUsSite",
   components: {
     ContactButton,
+    ContactInputPhone,
+    ContactInputSurname,
+    ContactInputName,
   },
 
   data() {
@@ -55,21 +46,37 @@ export default {
       name: "",
       surname: "",
       phone: "",
+      send: false,
     };
   },
 
   methods: {
-    sendData(val) {
+    getName(val) {
       // if (val.length < 4) return;
-      console.log(val);
+      console.log("name  " + val);
+      this.name = val;
+    },
 
+    getSurname(val) {
+      console.log("surname  " + val);
+      this.surname = val;
+    },
+
+    getPhone(val) {
+      console.log("getPhone  " + val);
+      this.phone = val;
+    },
+
+    sendData(val) {
+      console.log("send  " + val);
+      this.send = val;
       // keys for backend
       const data = {
         personName: this.name,
         Surname: this.surname,
         Number: this.phone,
+        Send: this.send,
       };
-
       // api post
       console.log(data);
     },
@@ -77,7 +84,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style >
 .contact {
   margin: 60px auto;
   max-width: 1200px;
@@ -134,17 +141,6 @@ export default {
 
 .data {
   padding-left: 70px;
-}
-
-.subm {
-  width: 168px;
-  border: 3px solid white;
-  background-color: #e15252;
-  font-size: 16px;
-  font-weight: lighter;
-  color: white;
-  letter-spacing: 2px;
-  margin-top: 20px;
 }
 
 input::placeholder {
