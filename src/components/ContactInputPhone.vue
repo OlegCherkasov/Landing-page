@@ -3,7 +3,7 @@
     <input
       v-model.number="phone"
       class="contact__input data basicFont"
-      type="phone"
+      type="tel"
       placeholder="+380..."
       @input="$emit('getPhone', phone)"
     />
