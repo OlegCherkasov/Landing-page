@@ -53,23 +53,23 @@ export default {
   methods: {
     getName(val) {
       // if (val.length < 4) return;
-      console.log("name  " + val);
       this.name = val;
+      console.log("name  " + this.name);
     },
 
     getSurname(val) {
-      console.log("surname  " + val);
       this.surname = val;
+      console.log("surname  " + this.surname);
     },
 
     getPhone(val) {
-      console.log("getPhone  " + val);
       this.phone = val;
+      console.log("phone  " + this.phone);
     },
 
     sendData(val) {
-      console.log("send  " + val);
       this.send = val;
+      console.log("send  " + this.send);
       // keys for backend
       const data = {
         personName: this.name,
