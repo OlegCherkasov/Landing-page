@@ -9,18 +9,22 @@
         <ContactButton @clickButton="sendData" />
       </div>
       <div class="contact__details">
-        <div class="details basicFont">
+        <a class="details basicFont" href="mailto:text@gmail.com">
           <img src="@/assets/post.svg" alt="post" height="24" />
           <p>text@gmail.com</p>
-        </div>
-        <div class="details basicFont">
+        </a>
+        <a class="details basicFont" href="tel:+3035550105">
           <img src="@/assets/call.svg" alt="call" height="24" />
           <p>(303)555-0105</p>
-        </div>
-        <div class="details basicFont">
+        </a>
+        <a
+          class="details basicFont"
+          href="https://www.google.com/maps"
+          target="_blank"
+        >
           <img class="geo" src="@/assets/geo.svg" alt="geo" heigt="24" />
           <p class="geo">2715 Ash Dr. San Jose, South Dakota 83475</p>
-        </div>
+        </a>
       </div>
     </div>
   </div>
@@ -167,6 +171,7 @@ input::placeholder {
   display: flex;
   justify-content: flex-start;
   gap: 15px;
+  text-decoration: none;
 }
 
 .geo {
