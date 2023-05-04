@@ -2,39 +2,35 @@
   <div class="contact">
     <h1 class="contact__title basicFont">Contact Us</h1>
     <div class="setting">
-      <form class="contact__form" method="post" action="">
+      <div class="contact__form">
         <input
+          v-model="name"
           class="contact__input data basicFont"
           type="text"
-          name="name"
           placeholder="You Name"
         />
         <input
+          v-model="surname"
           class="contact__input data basicFont"
           type="text"
-          name="surename"
-          placeholder="You Surename"
+          placeholder="You Surname"
         />
         <input
+          v-model.number="phone"
           class="contact__input data basicFont"
           type="tel"
-          name="phone"
           placeholder="+380..."
           required
         />
-        <input
-          class="contact__input subm basicFont"
-          type="submit"
-          value="send contact"
-        />
-      </form>
+        <ContactButton @clickButton="sendData" />
+      </div>
       <div class="contact__details">
         <div class="details basicFont">
-          <img src="@/assets/post.svg" alt="post" heigt="24" />
+          <img src="@/assets/post.svg" alt="post" height="24" />
           <p>text@gmail.com</p>
         </div>
         <div class="details basicFont">
-          <img src="@/assets/call.svg" alt="call" heigt="24" />
+          <img src="@/assets/call.svg" alt="call" height="24" />
           <p>(303)555-0105</p>
         </div>
         <div class="details basicFont">
@@ -47,8 +43,37 @@
 </template>
 
 <script>
+import ContactButton from "@/components/ContactButton.vue";
 export default {
   name: "ContactUsSite",
+  components: {
+    ContactButton,
+  },
+
+  data() {
+    return {
+      name: "",
+      surname: "",
+      phone: "",
+    };
+  },
+
+  methods: {
+    sendData(val) {
+      // if (val.length < 4) return;
+      console.log(val);
+
+      // keys for backend
+      const data = {
+        personName: this.name,
+        Surname: this.surname,
+        Number: this.phone,
+      };
+
+      // api post
+      console.log(data);
+    },
+  },
 };
 </script>
 
