@@ -6,7 +6,7 @@
         <ContactInputName @getName="getName" />
         <ContactInputSurname @getSurname="getSurname" />
         <ContactInputPhone @getPhone="getPhone" />
-        <ContactButton @clickButton="sendData" />
+        <ContactButton @click="sendData" />
       </div>
       <div class="contact__details">
         <a class="details basicFont" href="mailto:text@gmail.com">
@@ -51,6 +51,7 @@ export default {
       surname: "",
       phone: "",
       send: false,
+      loading: false,
     };
   },
 
@@ -68,10 +69,12 @@ export default {
 
     getPhone(val) {
       this.phone = val;
-      console.log("phone  " + this.phone);
+      // console.log("phone  " + this.phone);
+      console.log(val);
     },
 
     sendData(val) {
+      this.loading = true;
       this.send = val;
       console.log("send  " + this.send);
       // keys for backend
@@ -83,6 +86,7 @@ export default {
       };
       // api post
       console.log(data);
+      this.loading = false;
     },
   },
 };

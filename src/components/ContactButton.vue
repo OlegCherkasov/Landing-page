@@ -1,24 +1,10 @@
 <template>
-  <button
-    class="subm basicFont"
-    type="submit"
-    value="send contact"
-    @click="$emit('clickButton', send)"
-  >
-    send contact
-  </button>
+  <button class="subm basicFont" v-on="$listeners">send contact</button>
 </template>
 
-    // @click="$emit('clickButton', (send = true))"
-    
 <script>
 export default {
   name: "ContactButton",
-  data() {
-    return {
-      send: true,
-    };
-  },
 };
 </script>
 
