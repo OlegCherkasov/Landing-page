@@ -1,4 +1,4 @@
-# new2
+# landing-page
 
 ## Project setup
 ```
