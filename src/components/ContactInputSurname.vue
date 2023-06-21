@@ -1,7 +1,7 @@
 <template>
   <input
     v-model="surname"
-    class="contact__input data basicFont"
+    class="contact__input pad basicFont"
     type="text"
     placeholder="You Surname"
     @input="$emit('getSurname', surname)"
@@ -18,6 +18,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-</style>

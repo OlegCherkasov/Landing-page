@@ -19,7 +19,11 @@
 export default {
   name: "ServiceCard",
 
-  props: ["cardsText", "cardsButtonText", "cardsImage"],
+  props: {
+    cardsText: String,
+    cardsButtonText: String,
+    cardsImage: String,
+  },
 };
 </script>
 

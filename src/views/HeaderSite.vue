@@ -32,23 +32,28 @@ export default {
 <style scoped>
 .header {
   width: 100%;
+  height: 100vh;
   background: no-repeat url("../assets/BackGroundImg.png");
   background-size: cover;
   background-position: center;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 120px;
+  gap: 100px;
 }
 
 .header__logo {
-  margin-top: 80px;
-  margin-left: 100px;
+  margin-top: 40px;
+  margin-left: 80px;
 }
 
 .greeting {
   max-width: 360px;
   min-height: 317px;
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .text {
@@ -60,12 +65,19 @@ export default {
 }
 
 .header__btn {
+  margin: 0 auto;
   padding-top: 25px;
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 440px) {
-  .header {
-    height: 100vh;
+  .header__btn {
+    flex-direction: row;
+  }
+
+  .header__logo {
+    margin-top: 80px;
   }
 }
 </style>

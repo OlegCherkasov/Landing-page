@@ -1,24 +1,28 @@
 <template>
   <div class="footer">
-    <!-- <LogoCompany /> -->
+    <LogoCompany :isFooter="true" />
   </div>
 </template>
 
 <script>
-// import LogoCompany from "@/components/LogoCompany.vue";
+import LogoCompany from "@/components/LogoCompany.vue";
+
 export default {
   name: "FooterSite",
+
   components: {
-    // LogoCompany,
+    LogoCompany,
   },
 };
 </script>
 
 <style>
 .footer {
-  margin-top: 40px;
+  padding: 18px 0 18px 0;
   width: 100%;
-  height: 110px;
   background-color: #c4c4c4;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 </style>

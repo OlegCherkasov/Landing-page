@@ -19,11 +19,11 @@
         </a>
         <a
           class="details basicFont"
-          href="https://www.google.com/maps"
+          href="https://www.google.com/maps/place/%D0%A1%D0%B0%D0%BD-%D0%A5%D0%BE%D1%81%D0%B5,+%D0%9A%D0%B0%D0%BB%D0%B8%D1%84%D0%BE%D1%80%D0%BD%D0%B8%D1%8F,+%D0%A1%D0%A8%D0%90/@37.6660666,-121.8361603,9.19z/data=!4m10!1m2!2m1!1s2715+Ash+Dr.+San+Jose,+South+Dakota+83475!3m6!1s0x808fcae48af93ff5:0xb99d8c0aca9f717b!8m2!3d37.33874!4d-121.8852525!15sCikyNzE1IEFzaCBEci4gU2FuIEpvc2UsIFNvdXRoIERha290YSA4MzQ3NZIBCGxvY2FsaXR54AEA!16zL20vMGYwNHY?authuser=0&entry=ttu"
           target="_blank"
         >
           <img class="geo" src="@/assets/geo.svg" alt="geo" heigt="24" />
-          <p class="geo">2715 Ash Dr. San Jose, South Dakota 83475</p>
+          <p class="geo">2715 Ash Dr. San Jose, California 83475</p>
         </a>
       </div>
     </div>
@@ -38,6 +38,7 @@ import ContactInputName from "@/components/ContactInputName.vue";
 
 export default {
   name: "ContactUsSite",
+
   components: {
     ContactButton,
     ContactInputPhone,
@@ -69,8 +70,7 @@ export default {
 
     getPhone(val) {
       this.phone = val;
-      // console.log("phone  " + this.phone);
-      console.log(val);
+      console.log("phone  " + this.phone);
     },
 
     sendData(val) {
@@ -79,7 +79,7 @@ export default {
       console.log("send  " + this.send);
       // keys for backend
       const data = {
-        personName: this.name,
+        PersonName: this.name,
         Surname: this.surname,
         Number: this.phone,
         Send: this.send,
@@ -103,7 +103,7 @@ export default {
 
 .contact__title {
   padding-top: 100px;
-  font-size: 96px;
+  font-size: 65px;
   font-weight: lighter;
   color: white;
   line-height: 100%;
@@ -119,7 +119,6 @@ export default {
 }
 
 .contact__form {
-  max-width: 374px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -128,27 +127,25 @@ export default {
 
 .contact__details {
   margin-top: 30px;
-  max-width: 314px;
   margin-right: 5vw;
   height: 132px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .contact__input {
-  width: 374px;
+  width: 240px;
   height: 56px;
   border-radius: 28px;
   border: none;
-  display: block;
   font-size: 24px;
   font-weight: 500;
   color: #e15252;
 }
 
-.data {
-  padding-left: 70px;
+.pad {
+  padding-left: 50px;
 }
 
 input::placeholder {
@@ -183,15 +180,23 @@ input::placeholder {
 }
 
 @media only screen and (min-width: 560px) {
+  .contact__title {
+    font-size: 96px;
+  }
   .setting {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
   }
-
   .contact__form {
     margin-left: 5vw;
+  }
+  .contact__details {
+    align-items: initial;
+  }
+  .contact__input {
+    width: 320px;
   }
 }
 </style>

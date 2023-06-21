@@ -1,5 +1,4 @@
 <template>
-  <!-- <div :class="{isFooter ? logo__footer : logo}" > -->
   <div class="logo">
     <img
       src="@/assets/LogoImg.svg"
@@ -9,7 +8,7 @@
     />
     <div class="mainFont">
       <p class="logo--company">{{ company }}</p>
-      <p class="logo--prof">{{ profession }}</p>
+      <p v-if="!isFooter" class="logo--prof">{{ profession }}</p>
     </div>
   </div>
 </template>
@@ -18,7 +17,9 @@
 export default {
   name: "LogoCompany",
 
-  props: ["isFooter"],
+  props: {
+    isFooter: Boolean,
+  },
 
   data() {
     return {
@@ -35,13 +36,14 @@ export default {
 }
 
 .logo--company {
-  margin-top: 7px;
+  margin: 0;
   font-size: 62px;
   font-weight: 700;
   line-height: 60px;
 }
 
 .logo--prof {
+  margin-top: 6px;
   font-size: 28px;
   font-weight: 300;
   line-height: 30px;

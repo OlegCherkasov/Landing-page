@@ -17,7 +17,11 @@ import DoubleTitle from "@/components/DoubleTitle.vue";
 
 export default {
   name: "GallerySite",
-  components: { DoubleTitle },
+
+  components: {
+    DoubleTitle,
+  },
+
   data() {
     return {
       amountImages: 8,

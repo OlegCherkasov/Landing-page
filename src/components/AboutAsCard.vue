@@ -9,7 +9,10 @@
 export default {
   name: "AboutAsCard",
 
-  props: ["aboutMarker", "aboutCardText"],
+  props: {
+    aboutMarker: Number,
+    aboutCardText: String,
+  },
 };
 </script>
 

@@ -22,7 +22,11 @@ import ButtonSection from "@/components/ButtonSection.vue";
 export default {
   name: "AboutAsSite",
 
-  components: { DoubleTitle, AboutAsCard, ButtonSection },
+  components: {
+    DoubleTitle,
+    AboutAsCard,
+    ButtonSection,
+  },
 
   data() {
     return {

@@ -54,19 +54,8 @@ export default {
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 
-* {
-  box-sizing: border-box;
-}
-
-h1,
-h3,
-p,
-img {
-  margin: 0;
-}
-
 .app {
-  max-width: 1803px;
+  width: 100%;
   margin: 0 auto;
 }
 

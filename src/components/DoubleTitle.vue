@@ -11,6 +11,7 @@ export default {
   name: "DoubleTitle",
 
   props: ["title", "isHeader"],
+
   data() {
     return {
       subtitleHeader: "lorem",
@@ -26,6 +27,7 @@ export default {
 }
 
 .subtitle {
+  margin: 0;
   font-size: 30px;
   font-weight: 300;
   line-height: 37px;
@@ -33,6 +35,7 @@ export default {
 }
 
 .title {
+  margin: 0;
   font-size: 42px;
   font-weight: 900;
   line-height: 50px;
